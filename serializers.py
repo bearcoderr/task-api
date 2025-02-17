@@ -8,5 +8,5 @@ class TaskSerializer(serializers.ModelSerializer):
 
     def validate_title(self, value):
         if not value:
-            raise serializers.ValidationError("Title cannot be empty.")
+            raise serializers.ValidationError("Поле title не заполнено!")
         return value
